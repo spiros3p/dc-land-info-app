@@ -1,0 +1,12 @@
+<h2 class="text-center">
+    Search a Land's in-game information and buildings' levels
+</h2>
+<form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="landID">Land ID</label>
+        <input type="text" name="landID" [(ngModel)]="landID" id="landID" class="form-input" placeholder="Land ID">
+    </div>
+    <button id="submitButton" [ngClass]="{'loading': loading }" type="submit">
+        <span>{{loading ? "Loading..." : "Search"}}</span>
+    </button>
+</form>

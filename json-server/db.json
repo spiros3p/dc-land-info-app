@@ -1,0 +1,158 @@
+{
+    "lands": [
+        {
+            "id": 0,
+            "landsIDs": "625d85df79677f8f9df91394",
+            "assetID": "30030",
+            "attackedLands": [
+                {
+                    "attacker": "625d85df79677f8f9df91394",
+                    "defender": "61f81d62e6d99497c09686d3",
+                    "status": "AVAILABLE",
+                    "__v": 0,
+                    "_id": "625d875af4167334bee2e180"
+                }
+            ],
+            "bankLevel": 1,
+            "blockchain": "FLOW",
+            "fraction": {
+                "__v": 0,
+                "_id": "625d875af4167334bee2e180",
+                "name": "VAMPIRES",
+                "stakes": [
+                    {
+                        "balance": 15,
+                        "blockchain": "WAX",
+                        "lastStakeTimestamp": 1654162946564,
+                        "user": "60ddbc337ffca6001758b1cf",
+                        "_id": "62988602dfd3137db7a95eea"
+                    },
+                    {
+                        "balance": 15,
+                        "blockchain": "WAX",
+                        "lastStakeTimestamp": 1654162946564,
+                        "user": "60ddbc337ffca6001758b1cf",
+                        "_id": "62988602dfd3137db7a95eea"
+                    }
+                ]
+            },
+            "guildHouseLevel": 1,
+            "guildsWithApplicants": [],
+            "influenceBalance": 959.3131,
+            "leasingCards": [],
+            "name": "My FLOW land 1",
+            "ownerID": "61f81023e49604cea6341983",
+            "payoutHistory": [
+                {
+                    "land": "625d85df79677f8f9df91394",
+                    "read": false,
+                    "sdmBalance": 10294.922543215238,
+                    "timestamp": 1655288124603,
+                    "visibility": true,
+                    "__v": 0,
+                    "_id": "62a9b13c73f281d3088cec19"
+                },
+                {
+                    "land": "625d85df79677f8f9df91394",
+                    "read": false,
+                    "sdmBalance": 10294.922543215238,
+                    "timestamp": 1655288124603,
+                    "visibility": true,
+                    "__v": 0,
+                    "_id": "62a9b13c73f281d3088cec19"
+                }
+            ],
+            "rarity": "epic",
+            "recruits": [],
+            "reforgeContracts": [],
+            "saloonLevel": 2,
+            "sdmBalance": 188911.0679778944,
+            "sheriffsOfficeLevel": 1,
+            "soldiers": [],
+            "soldiersApplicants": [],
+            "stakedSdmBalance": 0,
+            "status": "staked",
+            "tenantID": null,
+            "tournaments": [],
+            "__v": 0,
+            "_id": "625d85df79677f8f9df91394"
+        },
+        {
+            "id": 0,
+            "landsIDs": "625d85df79677f8f9df91394",
+            "assetID": "30030",
+            "attackedLands": [
+                {
+                    "attacker": "625d85df79677f8f9df91394",
+                    "defender": "61f81d62e6d99497c09686d3",
+                    "status": "AVAILABLE",
+                    "__v": 0,
+                    "_id": "625d875af4167334bee2e180"
+                }
+            ],
+            "bankLevel": 1,
+            "blockchain": "FLOW",
+            "fraction": {
+                "__v": 0,
+                "_id": "625d875af4167334bee2e180",
+                "name": "VAMPIRES",
+                "stakes": [
+                    {
+                        "balance": 15,
+                        "blockchain": "WAX",
+                        "lastStakeTimestamp": 1654162946564,
+                        "user": "60ddbc337ffca6001758b1cf",
+                        "_id": "62988602dfd3137db7a95eea"
+                    },
+                    {
+                        "balance": 15,
+                        "blockchain": "WAX",
+                        "lastStakeTimestamp": 1654162946564,
+                        "user": "60ddbc337ffca6001758b1cf",
+                        "_id": "62988602dfd3137db7a95eea"
+                    }
+                ]
+            },
+            "guildHouseLevel": 1,
+            "guildsWithApplicants": [],
+            "influenceBalance": 959.3131,
+            "leasingCards": [],
+            "name": "My WAX land 1",
+            "ownerID": "61f81023e49604cea6341983",
+            "payoutHistory": [
+                {
+                    "land": "625d85df79677f8f9df91394",
+                    "read": false,
+                    "sdmBalance": 10294.922543215238,
+                    "timestamp": 1655288124603,
+                    "visibility": true,
+                    "__v": 0,
+                    "_id": "62a9b13c73f281d3088cec19"
+                },
+                {
+                    "land": "625d85df79677f8f9df91394",
+                    "read": false,
+                    "sdmBalance": 10294.922543215238,
+                    "timestamp": 1655288124603,
+                    "visibility": true,
+                    "__v": 0,
+                    "_id": "62a9b13c73f281d3088cec19"
+                }
+            ],
+            "rarity": "epic",
+            "recruits": [],
+            "reforgeContracts": [],
+            "saloonLevel": 2,
+            "sdmBalance": 11911.0679778944,
+            "sheriffsOfficeLevel": 1,
+            "soldiers": [],
+            "soldiersApplicants": [],
+            "stakedSdmBalance": 0,
+            "status": "staked",
+            "tenantID": null,
+            "tournaments": [],
+            "__v": 0,
+            "_id": "626d97cc9185ca37c75f82a3"
+        }
+    ]
+}

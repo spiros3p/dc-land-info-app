@@ -1,0 +1,84 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import '~bootstrap/scss/bootstrap';
+@import 'variables';
+
+body {
+    background-color: black;
+    // font-family: $opensans;
+    font-family: $metal;
+    color: $mainText;
+
+    // min-height: 100vh;
+    // display: flex;
+    // padding: 0;
+    // margin: 0;
+    // flex-direction: column;
+    // align-content: stretch;
+    // align-items: stretch;
+
+    & button{
+        background-image: url('./assets/btn-border.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: transparent;
+        border: none;
+
+        margin-top: 20px;
+        padding: 4px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 160px;
+        min-height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: background-image 0.25s;
+
+        & span{
+            color: $mainText;
+        }
+
+        &:hover{
+            background-image: url('./assets/btn-bg.png');
+            background-size: contain;
+            transition: background-image 0.25s;
+        }
+
+        &.loading{
+            background-image: none;
+            cursor: default !important;
+
+            & span{
+                color: red;
+            }
+        }
+    }
+
+    & form{
+        padding: 15px 10px;
+        text-align: center;
+        // display: flex;
+        // flex-direction: column;
+
+        & .form-group{
+            // display: ;
+            margin-bottom: 10px;
+
+            & label{
+                display: block;
+                margin-bottom: 5px;
+                font-size: 1;
+                color: red;
+            }
+
+            & .form-input{
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+
+    }
+}
