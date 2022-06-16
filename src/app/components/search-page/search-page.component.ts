@@ -10,6 +10,8 @@ export class SearchPageComponent implements OnInit {
 
   landID!: string;
   loading: boolean = false;
+  fetched: boolean = false;
+  land: any;
 
   constructor(
     private landService: LandService
@@ -18,13 +20,43 @@ export class SearchPageComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showValues() {
+    console.log("loading: " + this.loading);
+    console.log("fetched: " + this.fetched);
+  }
+
+  isObject(item: any): boolean {
+    return typeof item === "object";
+  }
+
   onSubmit() {
-    if ( !this.landID ) {
+    if (!this.landID) {
       console.log('input is empty');
       return
     }
+
     if (this.loading === true) return;
-    console.log(this.landID);
     this.loading = true;
+    this.fetched = false;
+
+    this.landService
+      .fetchLand(this.landID)
+      .subscribe(
+        (land) => {
+          this.land = land;
+          console.log(land);
+        },
+        error => {
+          console.error(error);
+          this.loading = false;
+          this.fetched = true;
+        },
+        () => {
+          console.log("end");
+          this.loading = false;
+          this.fetched = true;
+        }
+      )
+
   }
 }

@@ -1,6 +1,6 @@
-<h2 class="text-center">
+<h3 class="text-center mb-3">
     Search a Land's in-game information and buildings' levels
-</h2>
+</h3>
 <form (ngSubmit)="onSubmit()">
     <div class="form-group">
         <label for="landID">Land ID</label>
@@ -10,3 +10,56 @@
         <span>{{loading ? "Loading..." : "Search"}}</span>
     </button>
 </form>
+
+<div *ngIf="fetched" class="px-3 py-3 mt-3">
+    <ul>
+        <li *ngFor="let item of land | keyvalue">
+            <!-- {{land ? land.name : "No Land Found"}} -->
+            <div class="d-flex justify-content-between item">
+                <div class="item-key">{{item.key}}</div>
+                <div class="item-value">
+                    {{!isObject(item.value) ? item.value : ''}}
+                    <div *ngIf="isObject(item.value)">
+                        <ul>
+                            <li *ngFor="let itemNested of $any(item).value | keyvalue">
+                                <div class="d-flex justify-content-between item">
+                                    <div class="item-key">{{itemNested.key}}</div>
+                                    <div class="item-value">
+                                        {{!isObject(itemNested.value) ? itemNested.value : ''}}
+                                        <div *ngIf="isObject(itemNested.value)">
+                                            <ul>
+                                                <li *ngFor="let itemNestedNested of $any(itemNested).value | keyvalue">
+                                                    <div class="d-flex justify-content-between item">
+                                                        <div class="item-key">{{itemNestedNested.key}}</div>
+                                                        <div class="item-value">
+                                                            <!-- {{itemNestedNested.value}} -->
+                                                            {{!isObject(itemNestedNested.value) ? itemNestedNested.value : ''}}
+                                                            <div *ngIf="isObject(itemNestedNested.value)">
+                                                                <ul>
+                                                                    <li
+                                                                        *ngFor="let itemNestedNestedNested of $any(itemNestedNested).value | keyvalue">
+                                                                        <div
+                                                                            class="d-flex justify-content-between item">
+                                                                            <div class="item-key">
+                                                                                {{itemNestedNestedNested.key}}</div>
+                                                                            <div class="item-value">
+                                                                                {{itemNestedNestedNested.value}}</div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

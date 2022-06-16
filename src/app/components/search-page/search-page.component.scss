@@ -1,11 +1,43 @@
-:host{
+ul {
+    width: 850px;
+    margin: 0 auto;
+    list-style: none;
+    padding-left: 3px;
 
-    & p{
+    & li{
+        // padding: 5px 2px;
 
-    }
 
-    & form{
-        padding: 15px 5px;
-        text-align: center;
+        & .item{
+
+            & ul{
+                width: 100% !important;
+            }
+
+            &-key{
+                padding: 5px 2px;
+                border-top: 2px solid red;
+                border-left: 2px solid red;
+                border-bottom: 1px solid red;
+                border-right: 1px solid red;
+                max-width: 160px;
+                width: 100%;
+            }
+
+            &-value{
+                padding: 5px 2px;
+                border-top: 2px solid red;
+                border-left: 1px solid red;
+                border-bottom: 1px solid red;
+                border-right: 2px solid red;
+                width: 100%;
+            }
+
+        }
+        &:last-child{
+            & .item-value, .item-key{
+                border-bottom: 2px solid red;
+            }
+        }
     }
 }

@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { environment } from 'src/environments/environment';
@@ -8,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class LandService {
 
-  land: any;
+  public land: any;
 
   constructor(
     private http: HttpClient
@@ -19,10 +20,13 @@ export class LandService {
     )
   };
 
-  private basePath = environment.apiURL + '/admin';
+  private basePath = environment.landsApiURL;
 
-  fetchLand(id:any){
 
+
+  public fetchLand(id: any): Observable<any> {
+    const url = `${this.basePath}/lands/${id}`;
+    return this.http.get(url, this.httpOptions);
   }
 
 }

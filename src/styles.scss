@@ -6,17 +6,8 @@
 
 body {
     background-color: black;
-    // font-family: $opensans;
     font-family: $metal;
     color: $mainText;
-
-    // min-height: 100vh;
-    // display: flex;
-    // padding: 0;
-    // margin: 0;
-    // flex-direction: column;
-    // align-content: stretch;
-    // align-items: stretch;
 
     & button{
         background-image: url('./assets/btn-border.png');
@@ -60,11 +51,8 @@ body {
     & form{
         padding: 15px 10px;
         text-align: center;
-        // display: flex;
-        // flex-direction: column;
 
         & .form-group{
-            // display: ;
             margin-bottom: 10px;
 
             & label{
